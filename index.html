@@ -1,71 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <!-- jQuery read in -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Learning jQuery</title>
-    <link href="style.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="container">
-        <div class="jumbotron">
-            <h1>Main Heading</h1>
-            <button class="panel-button" data-panelid="panel1">#btn1</button>
-            <button class="panel-button" data-panelid="panel2">#btn2</button>
-            <button class="panel-button" data-panelid="panel3">#btn3</button>
-            <button class="panel-button" data-panelid="panel4">#btn4</button>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- CSS only -->
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- jQuery read in -->
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>Learning jQuery</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Main Heading</h1>
+                <button class="panel-button" data-panelid="panel1">#btn1</button>
+                <button class="panel-button" data-panelid="panel2">#btn2</button>
+                <button class="panel-button" data-panelid="panel3">#btn3</button>
+                <button class="panel-button" data-panelid="panel4">#btn4</button>
+            </div>
+            <div class="row">
+                <div class="col-xs-3">
+                    <div id="panel1" class="panel panel-primary">
+                        <div class="panel-heading">
+                            #panel1
+                        </div>
+                        <div class="panel-body">
+                            content
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-3">
+                    <div id="panel2" class="panel panel-primary">
+                        <div class="panel-heading">
+                            #panel2
+                        </div>
+                        <div class="panel-body">
+                            content
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-3">
+                    <div id="panel3" class="panel panel-primary">
+                        <div class="panel-heading">
+                            #panel3
+                        </div>
+                        <div class="panel-body">
+                            content
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-3">
+                    <div id="panel4" class="panel panel-primary">
+                        <div class="panel-heading">
+                            #panel4
+                        </div>
+                        <div class="panel-body">
+                            content
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-xs-3">
-                <div id="panel1" class="panel panel-primary"> 
-                    <div class="panel-heading">
-                        #panel1
-                    </div>
-                    <div class="panel-body">
-                        content
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-3">
-                <div id="panel2" class="panel panel-primary"> 
-                    <div class="panel-heading">
-                        #panel2
-                    </div>
-                    <div class="panel-body">
-                        content
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-3">
-                <div id="panel3" class="panel panel-primary"> 
-                    <div class="panel-heading">
-                        #panel3
-                    </div>
-                    <div class="panel-body">
-                        content
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-3">
-                <div id="panel4" class="panel panel-primary"> 
-                    <div class="panel-heading">
-                        #panel4
-                    </div>
-                    <div class="panel-body">
-                        content
-                    </div>
+        <div class="container">
+            <div class="row">
+                <h1>Enter a value in the text box</h1>
+                <input id="testInput" type="text" />
+                <div id="message">
+                    <p>The value of the text box is: <span></span></p>
                 </div>
             </div>
         </div>
-    </div>
-</body>
-<script src="script.js"></script>
+        <div class="container">
+            <div class="row">
+                <h1>Github user search</h1>
+                <form class="row gy-2 gx-3 align-items-center">
+                    <div class="col-auto">
+                        <label class="visually-hidden" for="autoSizingInput">Name</label>
+                        <input type="text" class="form-control" id="userSearch"
+                            placeholder="e.g. jameshtwose">
+                    </div>
+                </form>
+                <div id="userInfo"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
 </html>
